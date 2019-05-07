@@ -24,6 +24,14 @@ class InstallationSchemeController extends Controller
     }
 
     /**
+     * @Route("/connection")
+     */
+    public function connection()
+    {
+        return $this->json(['connectionStatus' => "true"]);
+    }
+
+    /**
      * @Route("/installation-scheme")
      */
     public function list()
